@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal-db</title>
+    <!-- bootstrap stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+</head>
+
+<body>
+    <!-- <button onclick="loadFoodDetails('hello')">button</button> -->
+    <header class="mt-4 text-center">
+        <marquee direction="left" width="60%" class="rounded text-primary fw-bold fs-5 text-uppercase">
+            search your favourite food
+        </marquee>
+    </header>
+    <section class="container mt-4">
+        <div class="input-group w-75 mx-auto">
+            <input id="input-field" type="text" class="form-control" placeholder="search here......" />
+            <button onclick="search()" id="search-btn" class="btn bg-primary text-white fw-bold" type="button">
+          Search
+        </button>
+        </div>
+    </section>
+
+    <!-- single meal details  -->
+    <div id="meals-details" class="container w-50 mx-auto my-4">
+        <!-- <div class="card">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div> -->
+    </div>
+
+    <section class="container mt-5">
+        <!-- show error message -->
+        <div id="error-msg" class="text-danger text-uppercase text-center fs-3">
+            Result not find
+        </div>
+
+        <!-- card section  -->
+        <div id="row-parent" class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- <div class="col">
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                            This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                        </p>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./meal-db.js"></script>
+</body>
+
+</html>
